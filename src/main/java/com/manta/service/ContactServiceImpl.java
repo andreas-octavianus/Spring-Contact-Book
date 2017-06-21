@@ -45,7 +45,8 @@ public class ContactServiceImpl implements ContactService {
     @Override
     public Contact deleteContact(Long id) {
         Contact contact = findContactById(id);
-        contactRepository.delete(id);
+        if (contact != null)
+            contactRepository.delete(contact);
         return contact;
     }
 }
