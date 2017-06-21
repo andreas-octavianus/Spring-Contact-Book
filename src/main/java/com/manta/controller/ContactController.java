@@ -15,8 +15,8 @@ public class ContactController {
     private ContactService contactService;
 
     @RequestMapping("/contacts")
-    protected List<Contact> findAll() {
-        return contactService.findAll();
+    protected List<String> findAll() {
+        return contactService.findAllContacts();
     }
 
 }

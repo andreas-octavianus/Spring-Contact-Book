@@ -10,5 +10,5 @@ public interface ContactService {
 
     List<Contact> saveAll(List<Contact> contacts);
 
-    List<Contact> findAll();
+    List<String> findAllContacts();
 }

@@ -20,7 +20,6 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
         createContacts();
-        System.out.println("DataLoader was invoked");
     }
 
     private void createContacts() {

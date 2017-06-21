@@ -25,7 +25,7 @@ public class ContactServiceImpl implements ContactService {
     }
 
     @Override
-    public List<Contact> findAll() {
-        return contactRepository.findAll(new Sort(Sort.Direction.ASC, new String[]{"lastName", "firstName"}));
+    public List<String> findAllContacts() {
+        return contactRepository.findContactList(new Sort(Sort.Direction.ASC, "name"));
     }
 }
