@@ -1,0 +1,13 @@
+server:
+  port: 8300
+
+spring:
+  datasource:
+    username: tutorial
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/contact
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
