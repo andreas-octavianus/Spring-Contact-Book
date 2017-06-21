@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface ContactRepository extends JpaRepository<Contact, Long> {
 
-    @Query("SELECT CONCAT(t.lastName, ', ', t.firstName) AS name FROM Contact t")
-    List<String> findContactList(Sort sort);
+    @Query("SELECT t.id, CONCAT(t.lastName, ', ', t.firstName) AS name FROM Contact t")
+    List findContactList(Sort sort);
 
 }

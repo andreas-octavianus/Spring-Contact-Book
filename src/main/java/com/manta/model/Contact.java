@@ -16,6 +16,9 @@ public class Contact implements Serializable {
     @GeneratedValue
     private Long id;
 
+    @Lob
+    private String photo;
+
     @Column(nullable = false)
     private String firstName;
 
