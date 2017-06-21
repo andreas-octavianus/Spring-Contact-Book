@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
 
 @Service
 public class ContactServiceImpl implements ContactService {
@@ -26,6 +26,14 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public List findAllContacts() {
-        return contactRepository.findContactList(new Sort(Sort.Direction.ASC, "name"));
+        List result = new ArrayList();
+        List<Object[]> contacts = contactRepository.findContactList(new Sort(Sort.Direction.ASC, "name"));
+        for (Object[] contact: contacts) {
+            Map<String, Object> map = new HashMap<>();
+            map.put("id", contact[0]);
+            map.put("name", contact[1]);
+            result.add(map);
+        }
+        return result;
     }
 }

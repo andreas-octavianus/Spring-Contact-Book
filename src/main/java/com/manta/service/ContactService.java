@@ -3,6 +3,7 @@ package com.manta.service;
 import com.manta.model.Contact;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ContactService {
 
