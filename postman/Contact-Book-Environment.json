@@ -1,0 +1,22 @@
+{
+  "id": "e6ea63d9-c1d8-a61b-429d-7a88abeca113",
+  "name": "Contact-Book-Environment",
+  "values": [
+    {
+      "enabled": true,
+      "key": "url",
+      "value": "localhost:8300",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "contact_id",
+      "value": "1",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1498072421074,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-06-21T19:29:25.629Z",
+  "_postman_exported_using": "Postman/5.0.0"
+}
