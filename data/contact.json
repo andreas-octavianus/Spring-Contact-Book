@@ -1,0 +1,18 @@
+{
+  "firstName": "Andreas",
+  "middleName": "",
+  "lastName": "Octavianus",
+  "company": "PT Manta Teknologi Mandiri",
+  "phones": [
+    {
+      "type": "Home",
+      "number": "+62 719 23578"
+    },
+    {
+      "type": "Mobile",
+      "number": "+62 813 8172 6342"
+    }
+  ],
+  "birthDate": "1981-10-07",
+  "notes": ""
+}
