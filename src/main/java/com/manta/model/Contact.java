@@ -30,7 +30,10 @@ public class Contact implements Serializable {
 
     private String notes;
 
-    @OneToMany(/*mappedBy = "contact", */cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Phone> phones = new ArrayList<>();
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Address> addresses = new ArrayList<>();
 
 }

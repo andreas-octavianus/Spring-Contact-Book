@@ -12,5 +12,16 @@
       "type": "Mobile",
       "number": "+62 813 8172 6342"
     }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "type": "Home",
+      "street": "Air Saga",
+      "additional": "RT 007/ RW 014",
+      "postalCode": "33451",
+      "city": "Tanjung Pandan",
+      "country": "Indonesia"
+    }
   ]
 }
