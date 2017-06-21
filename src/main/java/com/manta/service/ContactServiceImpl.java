@@ -36,4 +36,9 @@ public class ContactServiceImpl implements ContactService {
         }
         return result;
     }
+
+    @Override
+    public Contact findContactById(Long id) {
+        return contactRepository.findOne(id);
+    }
 }
