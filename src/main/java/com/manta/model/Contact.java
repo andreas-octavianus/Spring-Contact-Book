@@ -2,11 +2,9 @@ package com.manta.model;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Calendar;
 
 @Entity
 @Data
@@ -25,7 +23,8 @@ public class Contact implements Serializable {
 
     private String company;
 
-    private String birthday;
+    @Temporal(TemporalType.DATE)
+    private Calendar birthDate;
 
     private String notes;
 
