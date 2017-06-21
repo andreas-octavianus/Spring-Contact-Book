@@ -21,7 +21,7 @@ public class ContactController {
         return contactService.findAllContacts();
     }
 
-    @RequestMapping("/contacts/new")
+    @RequestMapping("/contacts/save")
     protected Contact save(@RequestBody Contact contact) {
         return contactService.save(contact);
     }
