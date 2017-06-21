@@ -31,4 +31,9 @@ public class ContactController {
         return contactService.findContactById(id);
     }
 
+    @RequestMapping("/contacts/{id}/delete")
+    protected Contact delete(@PathVariable Long id) {
+        return contactService.deleteContact(id);
+    }
+
 }

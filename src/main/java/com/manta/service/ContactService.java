@@ -13,4 +13,6 @@ public interface ContactService {
     List findAllContacts();
 
     Contact findContactById(Long id);
+
+    Contact deleteContact(Long id);
 }
