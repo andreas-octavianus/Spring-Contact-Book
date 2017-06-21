@@ -28,6 +28,18 @@
       "country": "Indonesia"
     }
   ],
+  "emails": [
+    {
+      "id": null,
+      "type": "Home",
+      "address": "john.doe@home.com"
+    },
+    {
+      "id": null,
+      "type": "Work",
+      "address": "john.doe@work.com"
+    }
+  ],
   "birthDate": "1963-12-27",
   "notes": ""
 }
