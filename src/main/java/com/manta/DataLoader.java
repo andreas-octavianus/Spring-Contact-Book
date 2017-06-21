@@ -40,6 +40,8 @@ public class DataLoader implements ApplicationRunner {
         contacts.add(createContact("Russell", null, "Westbrook", "Oklahoma City Thunder", null, null));
         contacts.add(createContact("Chris", null, "Paul", "Los Angeles Clippers", null, null));
         contacts.add(createContact("Timothy", "Theodore", "Duncan", null, null, null));
+        contacts.add(createContact("Seth", null, "Curry", "Dallas Mavericks", null, null));
+        contacts.add(createContact("Dirk", null, "Nowitzki", "Dallas Mavericks", null, null));
         contactService.saveAll(contacts);
     }
 
